@@ -1,0 +1,105 @@
+/* Définition de la police personanalisée */
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header
+{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+
+}
+nav li
+{
+    margin-right: 15px;
+}
+mark
+{
+	background-color: white;
+	color: black;
+	border: 3px black;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+#hebergements
+{
+    width: 44%;   
+    text-align: justify;
+    border: 3px #f2f2f2;
+    border-radius: 10px;
+    background-color: #DEEBFF;
+}
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.rating a
+ {
+    color: blue;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus 
+ .rating a:hover ~ a,
+.rating a:focus ~ a 
+{
+    color: yellow;
+    cursor: pointer;
+ }
+ 
+h2
+{
+margin: 1%;
+}
+.element:nth-child(1)
+{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+.element:nth-child(2)
+{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+.element:nth-child(3)
+{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+.element:nth-child(4)
+{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+.element:nth-child(5)
+{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+.element:nth-child(6)
+{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
