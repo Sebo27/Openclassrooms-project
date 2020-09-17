@@ -3,118 +3,170 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="Reservia.css" />
-        <title> Reservia test 2 </title>
+        <link rel="stylesheet" href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/css/all.css" />
+        <title> Reservia </title>
     </head>
     <body>
         <header>
-            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/logo/Reservia.svg">
+            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/logo/Reservia.svg">
             <nav>
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#Hébergements">Hébergements</a></li>
+                <li><a href="#Activités">Activités</a></li>
                 <li><a href="#">S'inscrire</a></li>
             </ul>
             </nav></header>
+            <div id="filtres">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
             <div>
               <form method="post" action="traitement.php">
-                <p><i class="fas fa-map-marker-alt-2x"></i>
+              <p>
+                  <i class="fas fa-map-marker-alt"/></i>
               <input type="text" name="ville" id="ville" placeholder="Marseille,fr" size="30" maxlength="10">
-              <input type="submit" value="Rechercher" /></p></form>
-            
-            <mark>Economique</mark>
-           <mark><i class="fas fa-child"></i>Familial</mark>
-           <mark><i class="fas fa-heart"></i>Romantique</mark>
-            <mark><i class="fas fa-dog"></i>Animaux autorisés</mark><br/>
+              <a href="#" class="bouton_rechercher"> Rechercher</a></p></form></div>
+            <div>
+            <mark><i class="fas fa-money-bill-wave circle-icon"></i> Economique</mark>
+           <mark><i class="fas fa-child circle-icon"></i> Familial</mark>
+           <mark><i class="fas fa-heart circle-icon"></i> Romantique</mark>
+            <mark><i class="fas fa-dog circle-icon"></i> Animaux autorisés</mark><br/>
           
-            <i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i>
-        </div>
+            <i class="fas fa-info circle-icon"></i> Plus de 500 logements sont disponibles dans cette ville</i>
+        </div></div>
        <section>
            <article>
                <div id="hebergements">
-             <h2>Hébergements à Marseille</h2>
+             <h2 id="Hébergements">Hébergements à Marseille</h2>
                <div id="conteneur">
               <div class="element 1">
-                <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/Auberge-la-Canebiere-resize.jpg"></a>
+                <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/Auberge-la-Canebiere-resize.jpg"></a>
                 <h5>Auberge la Canebière</h5>
             Nuit à partir de 25€</p>
                 <div class="rating">
-        <a href="#5" title="Donner 5 étoiles">☆</a>
-        <a href="#4" title="Donner 4 étoiles">☆</a>
-        <a href="#3" title="Donner 3 étoiles">☆</a>
-        <a href="#2" title="Donner 2 étoiles">☆</a>
-        <a href="#1" title="Donner 1 étoile">☆</a>
+        <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+        <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+        <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+        <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+        <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
                 </div></div>
             
              <div class="element 2">
-                 <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-du-port-resize.jpg"></a>
+                 <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-du-port-resize.jpg"></a>
                 <h5>Hôtel du port</h5>
             Nuit à partir de 52€</p>
             <div class="rating">
-                <a href="#5" title="Donner 5 étoiles">☆</a>
-                <a href="#4" title="Donner 4 étoiles">☆</a>
-                <a href="#3" title="Donner 3 étoiles">☆</a>
-                <a href="#2" title="Donner 2 étoiles">☆</a>
-                <a href="#1" title="Donner 1 étoile">☆</a>
+                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
                  </div></div>
            
                  <div class="element 3">
-               <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-les-mouettes-resize.jpg"></a>
+               <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-les-mouettes-resize.jpg"></a>
            <h5>Hôtel les mouettes</h5>
            Nuit à partir de 76€</p>
            <div class="rating">
-            <a href="#5" title="Donner 5 étoiles">☆</a>
-            <a href="#4" title="Donner 4 étoiles">☆</a>
-            <a href="#3" title="Donner 3 étoiles">☆</a>
-            <a href="#2" title="Donner 2 étoiles">☆</a>
-            <a href="#1" title="Donner 1 étoile">☆</a>
+            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
              </div></div>
       
              <div class="element 4">
-            <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-de-la-mer-resize.jpg"></a>
+            <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-de-la-mer-resize.jpg"></a>
            <h5>Hôtel de la mer</h5>
            Nuit à partir de 46€</p>
            <div class="rating">
-            <a href="#5" title="Donner 5 étoiles">☆</a>
-            <a href="#4" title="Donner 4 étoiles">☆</a>
-            <a href="#3" title="Donner 3 étoiles">☆</a>
-            <a href="#2" title="Donner 2 étoiles">☆</a>
-            <a href="#1" title="Donner 1 étoile">☆</a>
+            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#2" title="Donner 2 étoiles"><i class="far fa-star"></i></a>
+            <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
              </div></div>
        
              <div class="element 5">
-            <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/auberge-le-panier-resize.jpg"></a>
+            <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/auberge-le-panier-resize.jpg"></a>
           <h5>Auberge Le Panier</h5>
         Nuit à partir de 23€</p>
         <div class="rating">
-            <a href="#5" title="Donner 5 étoiles">☆</a>
-            <a href="#4" title="Donner 4 étoiles">☆</a>
-            <a href="#3" title="Donner 3 étoiles">☆</a>
-            <a href="#2" title="Donner 2 étoiles">☆</a>
-            <a href="#1" title="Donner 1 étoile">☆</a>
+            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
              </div></div>
         
              <div class="element 6">
-            <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/PremierProject/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-chez-amina-resize.jpg"></a>
+            <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-chez-amina-resize.jpg"></a>
           <h5>Hôtel chez Amina</h5>
         Nuit à partir de 96€</p>
           <div class="rating">
-            <a href="#5" title="Donner 5 étoiles">☆</a>
-            <a href="#4" title="Donner 4 étoiles">☆</a>
-            <a href="#3" title="Donner 3 étoiles">☆</a>
-            <a href="#2" title="Donner 2 étoiles">☆</a>
-            <a href="#1" title="Donner 1 étoile">☆</a>
+            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+            <a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
           </div></div></div>
           <h5>Afficher plus </h5></div>
     </article>
+    <aside>
+      <div id="populaires">
+       <p><h2> Les plus populaires</h2><i class="fas fa-chart-line"></i></p>
+
+        <div id="conteneur2">
+
+        <div class="element 7">
+          <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-le-soleil-du-matin-resize.jpg" class="imageflottante" alt="Image flottante" /></a>
+            <h5>Hôtel le soleil du matin</h5>
+            Nuit à partir de 128€</p>
+            <div class="rating">
+              <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+              <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+              <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+              <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+              <a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
+              </div></div>
+
+              <div class="element 8">
+                <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                  <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/au-coeur-de-leau-chambres-dhotes-resize.jpg"></a>
+              <h5>Au coeur de l'eau Chambres d'hôtes</h5>
+              Nuit à partir de 71€</p>
+              <div class="rating">
+                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
+                 </div></div> 
+
+                <div class="element 9">
+                  <p><a href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                    <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-tout-bleu-et-blanc-resize.jpg"></a>
+              <h5>Hôtel Tout bleu et Blanc</h5>
+              Nuit à partie de 68€</p>
+              <div class="rating">
+                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
+                <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
+                 </div></div> 
+
+
+        </div>
+      </div>
+    </aside>
        </section>
-        <i class="fas fa-chart-line"></i>
+    
     </body>
 </html>
