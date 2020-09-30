@@ -1,11 +1,15 @@
  /* Définition de la police personanalisée */
  @font-face {
-    font-family: 'ralewaythin';
+    font-family: 'raleway';
    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
          url('raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+body {
+    font-family: "Raleway",
+    margin: 0;
+  }
 header
 {
 
@@ -36,23 +40,55 @@ nav li :hover
 {
     border-top: 3px solid #760001;
 }
-
-.topnav {
-  width: 32%;
-  border-radius: 20px;
-  border:4px Solid #DEEBFF;
-  overflow: auto;
-background-color: blue;
-display: flex;
-
-}
-
+/* essai barre recherche */
+.barrederecherche {
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+  }
+  .barrederecherchewrap {
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+  }
+  .barrederecherchewrapicon {
+    margin-left: 0.1rem;
+  }
+  .barrederecherchesearchinput {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+  }
+  .barrederecherchesearchinput::placeholder {
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    color: #00000069;
+  }
+  .barrederecherchesubmitinput {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    cursor: pointer;
+  }
+/* fin de l'essai */
 .topnav a {
   float: left;
-  display: block;
-  text-align: center;
+    text-align: center;
   padding: 12px 12px;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .topnav a:hover {
@@ -60,23 +96,23 @@ display: flex;
   color: white;
 }
 
-.topnav a.active {
+.topnav a#active {
   background-color: #DEEBFF;
   color: black;
 }
 
-.topnav .search-container {
+.topnav #search-container {
   float: left;
 }
 
 .topnav input[type=text] {
   padding: 12px;
   margin-top: none;
-  font-size: 19px;
+  font-size: 17px;
   border: none;
 }
 
-.topnav .search-container button {
+.topnav #search-container button {
   float: right;
   padding: 10px;
   margin-top: none;
@@ -88,28 +124,76 @@ display: flex;
   color: white;
 }
 
-.topnav .search-container button:hover {
+.topnav #search-container button:hover {
   background: blue;
   color: black;
 }
-
-}
-.filtres1
-{
-    width: 25%;
-    background-color: white;
-    overflow: auto;
-   border-radius: 16px;
-    border: 3px solid blue;
-  
-}
-.circle-icon {
-    background: #DEEBFF;
-    width:2%;
-    border-radius: 50%;
-    padding:5px;
+/* debut de l'essai */
+.sectionfiltres {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .titrefiltres {
+    margin: 0 2rem 1rem 0;
+    display: flex;
     align-items: center;
-}
+  }
+  .conteneurfiltres {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .conteneurfiltres:last-child {
+    margin-right: 0;
+  }
+  .conteneurwrap {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+  }
+  .conteneurwrapicon {
+    color: blue;
+  }
+  .conteneurfiltrestitre {
+    margin: 0 1rem;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+  }
+  .infowrap {
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  .infowrapicon {
+    color: #0065FC;
+  }
+  .infotexte {
+    margin: 0;
+  }
+  /* fin de l'essai */
+
 #section1
 {
     display: flex;
@@ -131,11 +215,12 @@ display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    row-gap: 20px;
+    row-gap: 30px;
     column-gap: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 45px;
     
 }
  
@@ -143,49 +228,75 @@ h2
 {
     margin: 1%;
 }
-.element:nth-child(1)
+.element_1
 {
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/Auberge-la-Canebiere-resize.jpg");
+    background-repeat: no-repeat;
     border: 3px solid white;
     background-color: white;
-    border-radius: 10px;  
-    margin-top: 0%;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;  
+    background-size: 240px 110px;
     
 }
-#object-position-1
+.element_2
 {
-    object-position: top;
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-du-port-resize.jpg");
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;  
+    background-size: 240px 110px;
+}
+.element_3
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-les-mouettes-resize.jpg");
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;  
+    background-size: 240px 110px;
+}
+.element_4
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-de-la-mer-resize.jpg");
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;  
+    background-size: 240px 110px;
+}
+.element_5
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/auberge-le-panier-resize.jpg");
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;  
+    background-size: 240px 110px;
+
+}
+.element_6
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-chez-amina-resize.jpg");
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;  
+    background-size: 240px 110px;
 }
 
-.element:nth-child(2)
-{
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-}
-.element:nth-child(3)
-{
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-}
-.element:nth-child(4)
-{
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-}
-.element:nth-child(5)
-{
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-}
-.element:nth-child(6)
-{
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-}
 
 #aside1
 {
@@ -196,61 +307,66 @@ h2
     background-color: #DEEBFF;
     margin-left: 40px;
     margin-right: 50px;
+    
 }
+.titrepopulaire {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 #conteneur2
 {
-    row-gap: 20px;
+    row-gap: 30px;
     column-gap: 10px;
     display: flex;
     flex-direction: column;
    justify-content: space-around;
     align-content: space-around;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-left: 20px;
     margin-right: 20px;
+    align-items: center;
 
 }
-.para:nth-child(1)
-{width: 343px;
+.para_1
+{   background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-le-soleil-du-matin-resize.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 344px;
     height: 144px;
     border: 3px solid white;
     background-color: white;
     border-radius: 10px;
-    text-align: right;
-padding-top: 0%;
+    
+
 }
-.para:nth-child(1) img
+
+.para_2
 {
-    float: left;
-}
-.para:nth-child(2)
-{
-    width: 343px;
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/au-coeur-de-leau-chambres-dhotes-resize.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 344px;
     height: 144px;
     border: 3px solid white;
     background-color: white;
     border-radius: 10px;
-    text-align: right;
+    
     
 }
-.para:nth-child(2) img
+.para_3
 {
-    float: left;
-}
-
-.para:nth-child(3)
-{
-    width: 343px;
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-tout-bleu-et-blanc-resize.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 344px;
     height: 144px;
     border: 3px solid white;
     background-color: white;
     border-radius: 10px;
-    text-align: right;
+    
 }
-.para:nth-child(3) img
-{
-    float: left;
-}
+
 ul
 {
 list-style-type: none;
@@ -259,48 +375,105 @@ list-style-type: none;
 {
     display: flex;
     justify-content: space-between;
-    width: 650px;
-    height: 302px;  
+    width: 100%;
+    height: 465px;  
+    margin-left: 50px;
 }
 #conteneur3
 {
-
-    width: 310px;
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/vieux-port-resize.jpg");
+    background-repeat: no-repeat;
+    
+    border-radius: 15px;
+    width: 302px;
     height:455px;
 }
-}
-.acti1
-{
-    width: 302px;
-    height: 445px;
-    border: 3px solid blue;
-    background-color: white;
-    border-radius: 15px;
-}
+
+
 #conteneur4
 { 
     display: flex;
     flex-direction: column;
    justify-content: space-around;
     align-content: space-around;
-    width: 310px;
+    width: 302px;
     height: 455px;
-    
     row-gap: 44px;
 }
 .acti2 
 {
-width: 302px;
-height: 238px;
-border: 3px solid blue;
-background-color: white;
-border-radius: 15px;
-}
-.acti3
-{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/fort-de-pomègues-resize.jpg");
+    background-repeat: no-repeat;
     width: 302px;
-    height: 165px;
-    border: 3px solid blue;
+    height: 238px;
     background-color: white;
     border-radius: 15px;
 }
+.acti3
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/îles-du-frioul-resize.jpg");
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 165px;
+    background-color: white;
+    border-radius: 15px;
+}
+#conteneur5
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-national-des-calanques-resize.jpg");
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 302px;
+    height:455px;
+}
+#conteneur6
+{ 
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    align-content: space-around;
+    width: 302px;
+    height: 455px;
+    row-gap: 40px;
+}
+.acti5
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/notre-dame-de-la-garde-resize.jpg");
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 195px;
+    background-color: white;
+    border-radius: 15px;
+}
+.acti6
+{
+    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-longchamp-resize.jpg");
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 205px;
+    background-color: white;
+    border-radius: 15px;
+}
+.footer {
+    background-color: #F2F2F2;
+    width: 100%;
+  }
+  .footercolonne {
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+  .footercolonnebis {
+    width: 30%;
+    padding: 2rem 0;
+  }
+  .footercolonnebislien {
+    display: block;
+    margin: 1rem 0;
+  }
+  .footercolonnebislien:hover {
+    text-decoration: underline;
+  }
