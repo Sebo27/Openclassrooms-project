@@ -1,479 +1,429 @@
- /* Définition de la police personanalisée */
- @font-face {
-    font-family: 'raleway';
-   src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+ @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 body {
-    font-family: "Raleway",
-    margin: 0;
-  }
-header
-{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
 }
 
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    padding-bottom: 3px;
-    text-decoration: none;
-    
-
-}
-nav li
-{
-    margin-right: 15px;
-    font-size: 1.3em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-nav li :hover
-{
-    border-top: 3px solid #760001;
+.header {
+  display: grid;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
 }
-/* essai barre recherche */
-.barrederecherche {
-    display: inline-flex;
-    max-width: 100%;
-    overflow: auto;
-  }
-  .barrederecherchewrap {
-    background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem;
-    text-align: center;
-  }
-  .barrederecherchewrapicon {
-    margin-left: 0.1rem;
-  }
-  .barrederecherchesearchinput {
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    padding: 0 1.5rem;
-    box-sizing: border-box;
-    width: 14rem;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Raleway", "Sans serif";
-  }
-  .barrederecherchesearchinput::placeholder {
-    font-family: "Raleway", "Sans serif";
-    font-size: 1rem;
-    color: #00000069;
-  }
-  .barrederecherchesubmitinput {
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 0 1.5rem;
-    font-family: "Raleway", "Sans serif";
-    font-size: 1rem;
-    cursor: pointer;
-  }
-/* fin de l'essai */
-.topnav a {
-  float: left;
-    text-align: center;
-  padding: 12px 12px;
-  font-size: 17px;
+.headerImg {
+  grid-area: logo;
+  padding: 0 2rem;
+}
+.headerNav {
+  display: flex;
+  align-items: center;
+  grid-area: navbar;
+}
+.headerNavLink {
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.1s;
+}
+.headerNavLink[data-active=true] {
+  color: #0065FC;
+}
+.headerNavLink:hover {
+  color: #0065FC;
+}
+.headerSignup {
+  display: flex;
+  align-items: center;
+  grid-area: button;
+  padding: 2rem;
+  color: #0065FC;
+  font-weight: 600;
 }
 
-.topnav a:hover {
-  background-color: blue;
+@media screen and (min-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  } 
+  .headerNavLink:hover{
+    border-top: 3px solid #0065FC;
+  }
+  .headerSignup:hover{
+    border-top: 3px solid #0065FC;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" "navbar navbar navbar";
+  }
+  .headerimg {
+    order: 0;
+  }
+  .headerSignup {
+    order: 1;
+  }
+  .headerNav {
+    order: 2;
+  }
+  .headerNavLink {
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
+  }
+  .headerNavLink[data-active=true] {
+    border-bottom-color: #0065FC;
+  }
+}
+.main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.rechercherHeaderTitle {
+  margin-bottom: 0.5rem;
+}
+.rechercherHeaderSubtitle {
+  margin-top: 0;
+}
+.rechercherForm {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+.rechercherFormWrapicon {
+  background-color: #F2F2F2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.rechercherFormWrapiconIcon {
+  margin-left: 0.1rem;
+}
+.rechercherFormSearchinput {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+.rechercherFormSearchinput::placeholder {
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  color: #00000069;
+}
+.rechercherFormSubmitinput {
+  background-color: #0065FC;
   color: white;
-}
-
-.topnav a#active {
-  background-color: #DEEBFF;
-  color: black;
-}
-
-.topnav #search-container {
-  float: left;
-}
-
-.topnav input[type=text] {
-  padding: 12px;
-  margin-top: none;
-  font-size: 17px;
+  font-weight: bold;
   border: none;
-}
-
-.topnav #search-container button {
-  float: right;
-  padding: 10px;
-  margin-top: none;
-  margin-right: none;
-  background: blue;
-  font-size: 17px;
-  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
   cursor: pointer;
-  color: white;
+}
+.rechercherfiltre {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.rechercherfiltretitre
+ {
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.rechercherfiltreFilter {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.rechercherfiltreFilter:last-child {
+  margin-right: 0;
+}
+.rechercherfiltreFilterWrapicon {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+.rechercherfiltreFilterWrapiconIcon {
+  color: blue;
+}
+.rechercherfiltreFilterTitle {
+  margin: 0 1rem;
+}
+.rechercherResult {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+.rechercherResultWrapicon {
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.rechercherResultWrapiconIcon {
+  color: #0065FC;
+}
+.rechercherResultText {
+  margin: 0;
 }
 
-.topnav #search-container button:hover {
-  background: blue;
-  color: black;
+.hebergementWrapper, .hebergementFavorite, .hebergementMain {
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
-/* debut de l'essai */
-.sectionfiltres {
-    display: flex;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-  .titrefiltres {
-    margin: 0 2rem 1rem 0;
-    display: flex;
-    align-items: center;
-  }
-  .conteneurfiltres {
-    display: flex;
-    align-items: center;
-    margin-right: 2rem;
-    border: 2px solid #d9d9d9;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-  }
-  .conteneurfiltres:last-child {
-    margin-right: 0;
-  }
-  .conteneurwrap {
-    background-color: #DEEBFF;
-    border-radius: 100%;
-    height: 3rem;
-    width: 3rem;
-    min-height: 3.5rem;
-    min-width: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: -2px;
-  }
-  .conteneurwrapicon {
-    color: blue;
-  }
-  .conteneurfiltrestitre {
-    margin: 0 1rem;
-  }
-  .info {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0 2rem 0;
-  }
-  .infowrap {
-    height: 2rem;
-    width: 2rem;
-    min-height: 2rem;
-    min-width: 2rem;
-    border: solid 1px #d9d9d9;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-  }
-  .infowrapicon {
-    color: #0065FC;
-  }
-  .infotexte {
-    margin: 0;
-  }
-  /* fin de l'essai */
 
-#section1
-{
-    display: flex;
-    width: 100%;
+.hebergement {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
 }
-#article1
-{
-    width: 880px;
-    height: 628px;   
-    text-align: justify;
-    border: 3px #f2f2f2;
-    border-radius: 10px;
-    background-color: #DEEBFF;
-    margin-left: 50px;
+.hebergementMain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
-#conteneur
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    row-gap: 30px;
-    column-gap: 10px;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 45px;
-    
+.hebergementMainHeader {
+  grid-column: 1/span 3;
+}
+.hebergementMainHeaderTitle {
+  margin: 0;
+}
+.hebergementMainCard {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.11);
+}
+.hebergementMainCardFigure {
+  margin: 0;
+}
+.hebergementMainCardFigureImg {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.hebergementMainCardFigureCaptionTitle {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.hebergementMainCardDesc {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+.hebergementMainCardDescPrice {
+  font-weight: bols;
+}
+.hebergementMainCardGrade {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+.hebergementMainCardGradeIcon[data-active=true] {
+  color: #0065FC;
+}
+.hebergementMainCardGradeIcon[data-active=false] {
+  color: #d9d9d9;
+}
+.hebergementMainViewmore {
+  font-weight: bold;
+}
+.hebergementFavorite {
+  display: grid;
+  row-gap: 2rem;
+  align-items: start;
+}
+.hebergementFavoriteTitle {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.hebergementFavoriteWrapcontent {
+  display: flex;
+  align-items: stretch;
+}
+.hebergementFavoriteWrapcontentImg {
+  width: 33%;
+  min-height: 8rem;
+  height: auto;
+  border-radius: 1rem 0 0 1rem;
+}
+.hebergementFavoriteWrapcontentContent {
+  display: flex;
+  flex-direction: column;
+}
+.hebergementFavoriteWrapcontentContentWhitespace {
+  flex: 1;
+}
+
+@media (min-width: 1440px) and (max-width: 1880px){
+  .hebergement{  
+    grid-template-columns: 1fr;
+    row-gap: 2rem; }
+  .hebergementFavorite{   
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 10rem;
+      column-gap: 2rem;}
+  .hebergementFavoriteTitle{
+        grid-column: 1 / -1;
+      }
+}
+@media (min-width: 925px) and (max-width: 1440px){
+  .hebergementMain{   
+      grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 925px) and (min-width: 650px){
+  .hebergementMain{  
+      grid-template-columns: 1fr 1fr;}
 }
  
-h2
-{
-    margin: 1%;
+@media (max-width: 650px){
+  .hebergementMain{  
+      grid-template-columns: 1fr;}
 }
-.element_1
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/Auberge-la-Canebiere-resize.jpg");
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 240px;
-    height: 200px;  
-    background-size: 240px 110px;
+
+@media (max-width: 1000px){
+  .hebergementFavorite{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto repeat(3, 9rem); }
+}
+@media (max-width: 375px){
+  
     
-}
-.element_2
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-du-port-resize.jpg");
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 240px;
-    height: 200px;  
-    background-size: 240px 110px;
-}
-.element_3
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-les-mouettes-resize.jpg");
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 240px;
-    height: 200px;  
-    background-size: 240px 110px;
-}
-.element_4
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-de-la-mer-resize.jpg");
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 240px;
-    height: 200px;  
-    background-size: 240px 110px;
-}
-.element_5
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/auberge-le-panier-resize.jpg");
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 240px;
-    height: 200px;  
-    background-size: 240px 110px;
 
-}
-.element_6
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-chez-amina-resize.jpg");
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    width: 240px;
-    height: 200px;  
-    background-size: 240px 110px;
-}
-
-
-#aside1
-{
-    width:420px;
-    height: 628px;   
-    border: 3px #f2f2f2;
-    border-radius: 10px;
-    background-color: #DEEBFF;
-    margin-left: 40px;
-    margin-right: 50px;
-    
-}
-.titrepopulaire {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
   }
-#conteneur2
-{
-    row-gap: 30px;
-    column-gap: 10px;
-    display: flex;
-    flex-direction: column;
-   justify-content: space-around;
-    align-content: space-around;
-    margin-top: 45px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-
-}
-.para_1
-{   background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-le-soleil-du-matin-resize.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 344px;
-    height: 144px;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    
-
-}
-
-.para_2
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/au-coeur-de-leau-chambres-dhotes-resize.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 344px;
-    height: 144px;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    
-    
-}
-.para_3
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/hebergements/4_small/hotel-tout-bleu-et-blanc-resize.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 344px;
-    height: 144px;
-    border: 3px solid white;
-    background-color: white;
-    border-radius: 10px;
-    
-}
-
-ul
-{
-list-style-type: none;
-}
-#section2
-{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 465px;  
-    margin-left: 50px;
-}
-#conteneur3
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/vieux-port-resize.jpg");
-    background-repeat: no-repeat;
-    
-    border-radius: 15px;
-    width: 302px;
-    height:455px;
-}
 
 
-#conteneur4
-{ 
-    display: flex;
-    flex-direction: column;
-   justify-content: space-around;
-    align-content: space-around;
-    width: 302px;
-    height: 455px;
-    row-gap: 44px;
+.activity {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  grid-template-rows: auto 8rem 3rem 3rem 3rem 8rem;
+  margin: 4rem 0;
 }
-.acti2 
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/fort-de-pomègues-resize.jpg");
-    background-repeat: no-repeat;
-    width: 302px;
-    height: 238px;
-    background-color: white;
-    border-radius: 15px;
+.activitytitre {
+  grid-column: 1/-1;
 }
-.acti3
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/îles-du-frioul-resize.jpg");
-    background-repeat: no-repeat;
-    width: 302px;
-    height: 165px;
-    background-color: white;
-    border-radius: 15px;
+.activityCard {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.11);
+
 }
-#conteneur5
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-national-des-calanques-resize.jpg");
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    width: 302px;
-    height:455px;
+.activityCardtitre {
+  margin: 1rem;
 }
-#conteneur6
-{ 
-    display: flex;
-    flex-direction: column;
-   justify-content: space-around;
-    align-content: space-around;
-    width: 302px;
-    height: 455px;
-    row-gap: 40px;
+.activityCardImg {
+  max-width: 100%;
+  flex: 1;
+  object-fit: cover;
 }
-.acti5
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/notre-dame-de-la-garde-resize.jpg");
-    background-repeat: no-repeat;
-    width: 302px;
-    height: 195px;
-    background-color: white;
-    border-radius: 15px;
+
+.activityCard1 {
+  grid-column: 1/2;
+  grid-row: 2/9;
 }
-.acti6
-{
-    background-image: url("C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-longchamp-resize.jpg");
-    background-repeat: no-repeat;
-    width: 302px;
-    height: 205px;
-    background-color: white;
-    border-radius: 15px;
+.activityCard2 {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.activityCard3 {
+  grid-column: 3/4;
+  grid-row: 2/9;
+}
+.activityCard4 {
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+.activityCard5 {
+  grid-column: 2/3;
+  grid-row: 6/9;
+}
+.activityCard6 {
+  grid-column: 4/5;
+  grid-row: 5/9;
+}
+@media (max-width: 1100px){
+  .activity{  
+    row-gap: 2rem
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: auto 12rem 12rem }
+}
+@media (max-width: 925px){
+  .activity{   
+    row-gap: 2rem
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: auto 12rem 12rem 12rem}
+}
+@media (max-width: 650px){
+  .activity{  
+    row-gap: 2rem
+    grid-template-columns: 1fr
+    grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem}
+}
+@media (max-width: 375px){
+  .activity{
+    display: block;
+
+  }
 }
 .footer {
-    background-color: #F2F2F2;
-    width: 100%;
-  }
-  .footercolonne {
-    display: flex;
-    max-width: 100%;
-    width: 1440px;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-  }
-  .footercolonnebis {
-    width: 30%;
-    padding: 2rem 0;
-  }
-  .footercolonnebislien {
-    display: block;
-    margin: 1rem 0;
-  }
-  .footercolonnebislien:hover {
-    text-decoration: underline;
-  }
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.footerColumnwrapper {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.footerColumnwrapperColumn {
+  width: 30%;
+  padding: 2rem 0;
+}
+.footerColumnwrapperColumnLink {
+  display: block;
+  margin: 1rem 0;
+}
+.footerColumnwrapperColumnLink:hover {
+  text-decoration: underline;
+}

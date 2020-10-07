@@ -1,264 +1,339 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="Reservia.css" />
-        <link rel="stylesheet" href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/css/all.css" />
-        <title> Reservia </title>
-    </head>
-    <body>
-        <header>
-            <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/logo/Reservia.svg">
-            <nav>
-            <ul>
-                <li><a href="#Hébergements">Hébergements</a></li>
-                <li><a href="#Activités">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
-            </ul>
-            </nav>
-          </header>
-          <!--test-->
-        
-          <!--fin du test-->
-           <div> <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
-           </div>
-           <form class="barrederecherche" action="proceedFrom.html" method="GET">
-            <span class="barrederecherchewrap">
-              <i class="fas fa-map-marker-alt barrederecherchewrapicon"></i>
-            </span>
-            <input class="barrederecherchesearchinput" type="search" placeholder="Marseille, France">
-            <input class="barrederecherchesubmitinput" type="submit" value="Rechercher">
-          </form>
-        <!--essai nouveaux proceder-->
-        <section>
-          <div class="sectionfiltres">
-            <h2 class="titrefiltres">Filtres</h2>
-            <div class="conteneurfiltres">
-              <div class="conteneurwrap">
-                <i class="fas fa-money-bill-wave conteneurwrapicon"></i>
-              </div>
-              <h3 class="conteneurfiltrestitre">Économique</h3>
-            </div>
-            <div class="conteneurfiltres">
-              <div class="conteneurwrap">
-                <i class="fas fa-child conteneurwrapicon"></i>
-              </div>
-              <h3 class="conteneurfiltrestitre">Familial</h3>
-            </div>
-            <div class="conteneurfiltres">
-              <div class="conteneurwrap">
-                <i class="fas fa-heart conteneurwrapicon"></i>
-              </div>
-              <h3 class="conteneurfiltrestitre">Romantique</h3>
-            </div>
-            <div class="conteneurfiltres">
-              <div class="conteneurwrap">
-                <i class="fas fa-dog conteneurwrapicon"></i>
-              </div>
-              <h3 class="conteneurfiltrestitre">Animaux autorisés</h3>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservia</title>
+  <link rel="stylesheet" href="reservia.css">
+   <link rel="stylesheet" href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/css/all.css" />
+  
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <img class="headerImg" src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/logo/Reservia.svg">
+    <nav class="headerNav">
+      <a class="headerNavLink" href="#hebergement" data-active="true">Hébergement</a>
+      <a class="headerNavLink" href="#activity" data-active="false">Activités</a>
+    </nav>
+    <a class="headerSignup" href="#">S'inscrire</a>
+  </header>
+  <!-- HEADER -->
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- RECHERCHER -->
+    <section class="rechercher">
+      <header class="rechercherHeader">
+        <h1 class="rechercherHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="rechercherHeaderSubtitle">En plein centre de ville ou en pleine nature</p>
+      </header>
+      <form class="rechercherForm" action="proceedFrom.html" method="GET">
+        <span class="rechercherFormWrapicon">
+          <i class="fas fa-map-marker-alt rechercherFormWrapiconIcon"></i>
+        </span>
+        <input class="rechercherFormSearchinput" type="search" placeholder="Marseille, France">
+        <input class="rechercherFormSubmitinput" type="submit" value="Rechercher">
+      </form>
+      <div class="rechercherfiltre">
+        <h2 class="rechercherfiltretitre">Filtres</h2>
+        <div class="rechercherfiltreFilter">
+          <div class="rechercherfiltreFilterWrapicon">
+            <i class="fas fa-money-bill-wave rechercherfiltreFilterWrapiconIcon"></i>
           </div>
-          <div class="info">
-            <div class="infowrap"><i class="fas fa-info infowrapicon"></i></div>
-            <p class="infotexte">Plus de 500 logements sont disponibles dans cette ville</p>
-          </div>
-        </section>  
-        <!--fin de l'essai-->  
-       <section>
-         <div id="section1">
-           <article>
-             <div id="article1">
-               <div id="hebergements">
-             <h2 id="Hébergements" style="margin-left: 40px;">Hébergements à Marseille</h2>
-             <div id="conteneur">
-              <div class="element_1">
-              <p style="margin-top: 120px;"><h3>Auberge la Canebière</h3>
-                   <a>Nuit à partir de 25€</a>
-                <div class="rating">
-        <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-        <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-        <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-        <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-        <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
-                </p></div></div>
-            
-             <div class="element_2">
-                 <p style="margin-top: 120px;"><h3>Hôtel du port</h3>
-          <a>Nuit à partir de 52€</a>
-            <div class="rating">
-                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
-                 </p></div></div>
-           
-                 <div class="element_3">
-               <p style="margin-top: 120px;"><h3>Hôtel les mouettes</h3>
-          <a>Nuit à partir de 76€</a>
-           <div class="rating">
-            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
-            </p></div></div>
-      
-             <div class="element_4">
-            <p style="margin-top: 120px;"><h3>Hôtel de la mer</h3>
-            <a>Nuit à partir de 46€</a>
-           <div class="rating">
-            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#2" title="Donner 2 étoiles"><i class="far fa-star"></i></a>
-            <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
-            </p></div></div>
-       
-             <div class="element_5">
-            <p style="margin-top: 120px;"><h3>Auberge Le Panier</h3>
-           <a>Nuit à partir de 23€</a>
-           <div class="rating">
-            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
-            </p></div></div>
-        
-             <div class="element_6">
-            <p style="margin-top: 120px;"><h3>Hôtel chez Amina</h3>
-       <a>Nuit à partir de 96€</a>
-          <div class="rating">
-            <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-            <a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
-         </p></div></div></div>
-          <h3 style="margin-left: 40px;">Afficher plus </h3></div></div>
-    </article>
-    <aside style="margin-top: auto;">
-      <div id="aside1">
-      <div id="populaires">
-       <h2 class="titrepopulaire"> Les plus populaires <i class="fas fa-chart-line"></i></h2></div>
-
-        <div id="conteneur2">
-
-        <div class="para_1">
-          <p>
-             <h3 style="margin-left: 160px;">Hôtel le soleil du</h3>
-              <h3 style="margin-left: 160px;">Matin</h3>
-               <a style="margin-left: 160px;">Nuit à partir de 128€</a>
-               <div class="rating" style="margin-left: 160px;">
-                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#1" title="Donner 1 étoile"><i class="fas fa-star"></i></a>
-              </p></div>
-              </div>
-
-              <div class="para_2">
-           <p>
-               <h3 style="margin-left: 160px;">Au coeur de l'eau</h3>
-               <h3 style="margin-left: 160px;">Chambres d'hôtes</h3>
-               <a style="margin-left: 160px;">Nuit à partir de 71€</a>
-              <div class="rating" style="margin-left: 160px;">
-                <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
-                </p></div></div>
-
-                <div class="para_3">
-            <p>
-              <h3 style="margin-left: 160px;">Hôtel Tout bleu et</h3>
-                <h3 style="margin-left: 160px;">Blanc</h3>
-                 <a style="margin-left: 160px;">Nuit à partie de 68€</a>
-                  <div class="rating" style="margin-left: 160px;">
-              <a href="#5" title="Donner 5 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#4" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#2" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-                <a href="#1" title="Donner 1 étoile"><i class="far fa-star"></i></a>
-                </p></div></div>
-
-
+          <h3 class="rechercherfiltreFilterTitle">Économique</h3>
         </div>
-      </div></div>
-    </aside>
-  </div>
-       </section>
-       <h2 id="Activités">Activités à Marseille</h2>
-       <section style="display: flex;">
-         <div id="section2" style="display: flex;">
-           
-           <article>
-             <div id="article2" style="display: flex;">
-               <div id="conteneur3">
-                 <div class="acti1">
-                  <h4 style="margin-top: 420px;
-                    margin-left: 10px;"> Vieux Port</h4>                
-                  </div></div>
-                  <div id="conteneur4" style="margin-left: 40px;">
-                  <div class="acti2">
-                    <h4 style="margin-top: 200px;
-                      margin-left: 10px;"> Fort de Pomègues</h4>
-                  </div>
-                  <div class="acti3">
-                    <h4 style="margin-top: 130px; margin-left:10px;">Iles du Frioul</h4>
-                  </div></div>
-               </div>
+        <div class="rechercherfiltreFilter">
+          <div class="rechercherfiltreFilterWrapicon">
+            <i class="fas fa-child rechercherfiltreFilterWrapiconIcon"></i>
+          </div>
+          <h3 class="rechercherfiltreFilterTitle">Familial</h3>
+        </div>
+        <div class="rechercherfiltreFilter">
+          <div class="rechercherfiltreFilterWrapicon">
+            <i class="fas fa-heart rechercherfiltreFilterWrapiconIcon"></i>
+          </div>
+          <h3 class="rechercherfiltreFilterTitle">Romantique</h3>
+        </div>
+        <div class="rechercherfiltreFilter">
+          <div class="rechercherfiltreFilterWrapicon">
+            <i class="fas fa-dog rechercherfiltreFilterWrapiconIcon"></i>
+          </div>
+          <h3 class="rechercherfiltreFilterTitle">Animaux autorisés</h3>
+        </div>
+      </div>
+      <div class="rechercherResult">
+        <div class="rechercherResultWrapicon"><i class="fas fa-info rechercherResultWrapiconIcon"></i></div>
+        <p class="rechercherResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </section>
+    <!-- RECHERCHER -->
 
-             </div>
-           </article>
-           <article>
-            <div id="article3" style="display: flex; margin-left: 10px;">
-              <div id="conteneur5" style="margin-left: 40px;">
-                <div class="acti4">
-                 <h4 style="margin-top: 420px;
-                   margin-left: 10px;"> Parc National des Calanques</h4>                
-                 </div></div>
-                 <div id="conteneur6" style="margin-left: 40px; margin-right: 90px;">
-                 <div class="acti5">
-                   <h4 style="margin-top: 160px;
-                     margin-left: 10px;"> Notre Dame de la Garde</h4>
-                 </div>
-                 <div class="acti6">
-                   <h4 style="margin-top: 170px; margin-left:10px;"> Parc Longchamp</h4>
-                 </div></div>
-              </div>
-
+    <!-- HEBERGEMENT -->
+    <section class="hebergement" id="hebergement">
+      <div class="hebergementMain">
+        <header class="hebergementMainHeader">
+          <h2 class="hebergementMainHeaderTitle">Hébergement à Marseille</h2>
+        </header>
+        <article class="hebergementMainCard hebergementMainCard1">
+          <a href="#">
+            <figure class="hebergementMainCardFigure">
+              <img 
+                class="hebergementMainCardFigureImg"
+                 src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/auberge-la-canebiere.jpg">
+                
+              <figcaption class="hebergementMainCardFigureCaption">
+                <h3 class="hebergementMainCardFigureCaptionTitle">Auberge la Cannebière</h3>
+              </figcaption>
+            </figure>
+            <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">25€</strong></p>
+            <div class="hebergementMainCardGrade">
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
             </div>
-          </article>
-
-         </div>
-       </section>
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footercolonne">
-    <div class="footercolonnebis">
-      <h3 class="footerColumnwrapperColumnTitle">A propos</h3>
-      <a href="#" class="footercolonnebislien">Fonctionnement du site</a>
-      <a href="#" class="footercolonnebislien">Conditions générales de vente</a>
-      <a href="#" class="footercolonnebislien">Données et confidentialités</a>
-    </div>
-    <div class="footercolonnebis">
-      <h3 class="footerColumnwrapperColumnTitle">Nos hébergement</h3>
-      <a href="#" class="footercolonnebislien">Charte qualité</a>
-      <a href="#" class="footercolonnebislien">Soumettre votre hotel</a>
-    </div>
-    <div class="footercolonnebis">
-      <h3 class="footerColumnwrapperColumnTitle">Assitance</h3>
-      <a href="#" class="footercolonnebislien">Centre d'aide</a>
-      <a href="#" class="footercolonnebislien">Nous contacter</a>
-    </div>
-  </div>
-</footer>
-<!-- FOOTER -->
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementMainCard2">
+          <a href="#">
+            <figure class="hebergementMainCardFigure">
+              <img 
+                class="hebergementMainCardFigureImg"
+                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-du-port.jpg"
+                
+              >
+              <figcaption class="hebergementMainCardFigureCaption">
+                <h3 class="hebergementMainCardFigureCaptionTitle">Hôtel du port</h3>
+              </figcaption>
+            </figure>
+            <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">52€</strong></p>
+            <div class="hebergementMainCardGrade">
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+            </div>
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementMainCard3">
+          <a href="#">
+            <figure class="hebergementMainCardFigure">
+              <img 
+                class="hebergementMainCardFigureImg"
+                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-les-mouettes.jpg"
     
-    </body>
+              >
+              <figcaption class="hebergementMainCardFigureCaption">
+                <h3 class="hebergementMainCardFigureCaptionTitle">Hôtel Les mouettes</h3>
+              </figcaption>
+            </figure>
+            <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">76€</strong></p>
+            <div class="hebergementMainCardGrade">
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
+            </div>
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementMainCard4">
+          <a href="#">
+            <figure class="hebergementMainCardFigure">
+              <img 
+                class="hebergementMainCardFigureImg"
+                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-de-la-mer.jpg"
+                
+              >
+              <figcaption class="hebergementMainCardFigureCaption">
+                <h3 class="hebergementMainCardFigureCaptionTitle">hôtel de la mer</h3>
+              </figcaption>
+            </figure>
+            <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">46€</strong></p>
+            <div class="hebergementMainCardGrade">
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
+            </div>
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementMainCard5">
+          <a href="#">
+            <figure class="hebergementMainCardFigure">
+              <img 
+                class="hebergementMainCardFigureImg"
+                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/auberge-le-panier.jpg"
+              
+              >
+              <figcaption class="hebergementMainCardFigureCaption">
+                <h3 class="hebergementMainCardFigureCaptionTitle">Auberge Le Panier</h3>
+              </figcaption>
+            </figure>
+            <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">23€</strong></p>
+            <div class="hebergementMainCardGrade">
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
+            </div>
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementMainCard6">
+          <a href="#">
+            <figure class="hebergementMainCardFigure">
+              <img 
+                class="hebergementMainCardFigureImg"
+                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-chez-amina.jpg"
+                
+              >
+              <figcaption class="hebergementMainCardFigureCaption">
+                <h3 class="hebergementMainCardFigureCaptionTitle">Hôtel chez Amina</h3>
+              </figcaption>
+            </figure>
+            <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">96€</strong></p>
+            <div class="hebergementMainCardGrade">
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+            </div>
+          </a>
+        </article>
+        <a class="hebergementMainViewmore" href="#">Afficher plus</a>
+      </div>
+
+      <aside class="hebergementFavorite">
+        <h2 class="hebergementFavoriteTitle">Les plus populaire <i class="fas fa-chart-line"></i></h2>
+        <article class="hebergementMainCard hebergementFavoriteCard">
+          <a class="hebergementFavoriteWrapcontent" href="#">
+            <img 
+              class="hebergementMainCardFigureImg hebergementFavoriteWrapcontentImg"
+              src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-le-soleil-du-matin.jpg"
+              
+            >
+            <div class="hebergementFavoriteWrapcontentContent">
+              <h3 class="hebergementMainCardFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+              <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">128€</strong></p>
+              <div class="hebergementFavoriteWrapcontentContentWhitespace"></div>
+              <div class="hebergementMainCardGrade">
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementFavoriteCard">
+          <a class="hebergementFavoriteWrapcontent" href="#">
+            <img 
+              class="hebergementMainCardFigureImg hebergementFavoriteWrapcontentImg"
+              src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/au-coeur-de-leau-chambres-dhotes.jpg"
+              
+            >
+            <div class="hebergementFavoriteWrapcontentContent">
+              <h3 class="hebergementMainCardFigureCaptionTitle">Au coeur de l'eau Chambres d'hôtes</h3>
+              <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">71€</strong></p>
+              <div class="hebergementFavoriteWrapcontentContentWhitespace"></div>
+              <div class="hebergementMainCardGrade">
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="hebergementMainCard hebergementFavoriteCard">
+          <a class="hebergementFavoriteWrapcontent" href="#">
+            <img 
+              class="hebergementMainCardFigureImg hebergementFavoriteWrapcontentImg"
+              src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-tout-bleu-et-blanc-resize.jpg"
+              
+            >
+            <div class="hebergementFavoriteWrapcontentContent">
+              <h3 class="hebergementMainCardFigureCaptionTitle">Hôtel Tout bleu et Blanc</h3>
+              <p class="hebergementMainCardDesc">Nuit à partir de <strong class="hebergementMainCardDescPrice">68€</strong></p>
+              <div class="hebergementFavoriteWrapcontentContentWhitespace"></div>
+              <div class="hebergementMainCardGrade">
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="true"></i>
+                <i class="fas fa-star hebergementMainCardGradeIcon" data-active="false"></i>
+              </div>
+            </div>
+          </a>
+        </article>
+      </aside>
+      
+    </section>
+    <!-- HEBERGEMENT -->
+
+    <!-- ACTIVITY -->
+    <section class="activity" id="activity">
+      <h2 class="activitytitre">Activités à Marseille</h2>
+      <div class="activityCard activityCard1">
+         <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/vieux-port.jpg" class="activityCardImg"> 
+        <h3 class="activityCardtitre">Vieux Port</h3>
+      </div>
+      <div class="activityCard activityCard2">
+        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/fort-de-pomègues-resize.jpg"  class="activityCardImg">
+        <h3 class="activityCardtitre">Fort de Pomègues</h3>
+      </div>
+      <div class="activityCard activityCard3">
+        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-national-des-calanques.jpg"  class="activityCardImg">
+        <h3 class="activityCardtitre">Parc National des Calanques</h3>
+      </div>
+      <div class="activityCard activityCard4">
+        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/notre-dame-de-la-garde.jpg"  class="activityCardImg">
+        <h3 class="activityCardtitre">Notre Dame de la Garde</h3>
+      </div>
+      <div class="activityCard activityCard5">
+        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/île-du-frioul.jpg"  class="activityCardImg">
+        <h3 class="activityCardtitre">Île du Frioul</h3>
+      </div>
+      <div class="activityCard activityCard6">
+        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-longchamp.jpg"class="activityCardImg">
+        <h3 class="activityCardtitre">Parc Longchamp</h3>
+      </div>
+    </section>
+    <!-- ACTIVITY -->
+
+  </main>
+  <!-- MAIN -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footerColumnwrapper">
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumntitre">A propos</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Fonctionnement du site</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Conditions générales de vente</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Données et confidentialités</a>
+      </div>
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumntitre">Nos hébergement</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Charte qualité</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Soumettre votre hotel</a>
+      </div>
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumntitre">Assitance</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Centre d'aide</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Nous contacter</a>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER -->
+</body>
 </html>
