@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reservia</title>
   <link rel="stylesheet" href="reservia.css">
-   <link rel="stylesheet" href="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/css/all.css" />
+   <link rel="stylesheet" href="./css/all.css" />
   
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="header">
-    <img class="headerImg" src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/logo/Reservia.svg">
+    <img class="headerImg" src="./images/logo/Reservia.svg">
     <nav class="headerNav">
       <a class="headerNavLink" href="#hebergement" data-active="true">Hébergement</a>
       <a class="headerNavLink" href="#activity" data-active="false">Activités</a>
@@ -29,13 +29,19 @@
         <h1 class="rechercherHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="rechercherHeaderSubtitle">En plein centre de ville ou en pleine nature</p>
       </header>
-      <form class="rechercherForm" action="proceedFrom.html" method="GET">
-        <span class="rechercherFormWrapicon">
-          <i class="fas fa-map-marker-alt rechercherFormWrapiconIcon"></i>
-        </span>
-        <input class="rechercherFormSearchinput" type="search" placeholder="Marseille, France">
-        <input class="rechercherFormSubmitinput" type="submit" value="Rechercher">
-      </form>
+        <form class="rechercherForm" action="proceedFrom.html" method="GET">
+          <span class="rechercherFormWrapicon">
+            <i class="fas fa-map-marker-alt rechercherFormWrapiconIcon"></i>
+          </span>
+          <input class="rechercherFormSearchinput" type="search" placeholder="Marseille, France" size="1">
+          <button class="rechercherFormSubmitinput">
+            <span class="rechercherFormSubmitinputText">Rechercher</span>
+            <style media= "screen and (min-width: 601px)">
+             .rechercherFormSubmitinputIcon{
+               display: none;}</style>
+             <i class="fas fa-search rechercherFormSubmitinputIcon"></i>
+          </button>
+        </form>
       <div class="rechercherfiltre">
         <h2 class="rechercherfiltretitre">Filtres</h2>
         <div class="rechercherfiltreFilter">
@@ -81,7 +87,7 @@
             <figure class="hebergementMainCardFigure">
               <img 
                 class="hebergementMainCardFigureImg"
-                 src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/auberge-la-canebiere.jpg">
+                 src="./images/auberge-la-canebiere.jpg">
                 
               <figcaption class="hebergementMainCardFigureCaption">
                 <h3 class="hebergementMainCardFigureCaptionTitle">Auberge la Cannebière</h3>
@@ -102,7 +108,7 @@
             <figure class="hebergementMainCardFigure">
               <img 
                 class="hebergementMainCardFigureImg"
-                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-du-port.jpg"
+                src="./images/hotel-du-port.jpg"
                 
               >
               <figcaption class="hebergementMainCardFigureCaption">
@@ -124,7 +130,7 @@
             <figure class="hebergementMainCardFigure">
               <img 
                 class="hebergementMainCardFigureImg"
-                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-les-mouettes.jpg"
+                src="./images/hotel-les-mouettes.jpg"
     
               >
               <figcaption class="hebergementMainCardFigureCaption">
@@ -146,7 +152,7 @@
             <figure class="hebergementMainCardFigure">
               <img 
                 class="hebergementMainCardFigureImg"
-                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-de-la-mer.jpg"
+                src="./images/hotel-de-la-mer.jpg"
                 
               >
               <figcaption class="hebergementMainCardFigureCaption">
@@ -168,7 +174,7 @@
             <figure class="hebergementMainCardFigure">
               <img 
                 class="hebergementMainCardFigureImg"
-                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/auberge-le-panier.jpg"
+                src="./images/auberge-le-panier.jpg"
               
               >
               <figcaption class="hebergementMainCardFigureCaption">
@@ -190,7 +196,7 @@
             <figure class="hebergementMainCardFigure">
               <img 
                 class="hebergementMainCardFigureImg"
-                src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-chez-amina.jpg"
+                src="./images/hotel-chez-amina.jpg"
                 
               >
               <figcaption class="hebergementMainCardFigureCaption">
@@ -216,7 +222,7 @@
           <a class="hebergementFavoriteWrapcontent" href="#">
             <img 
               class="hebergementMainCardFigureImg hebergementFavoriteWrapcontentImg"
-              src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-le-soleil-du-matin.jpg"
+              src="./images/hotel-le-soleil-du-matin.jpg"
               
             >
             <div class="hebergementFavoriteWrapcontentContent">
@@ -237,7 +243,7 @@
           <a class="hebergementFavoriteWrapcontent" href="#">
             <img 
               class="hebergementMainCardFigureImg hebergementFavoriteWrapcontentImg"
-              src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/au-coeur-de-leau-chambres-dhotes.jpg"
+              src="./images/au-coeur-de-leau-chambres-dhotes.jpg"
               
             >
             <div class="hebergementFavoriteWrapcontentContent">
@@ -258,7 +264,7 @@
           <a class="hebergementFavoriteWrapcontent" href="#">
             <img 
               class="hebergementMainCardFigureImg hebergementFavoriteWrapcontentImg"
-              src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/images/hotel-tout-bleu-et-blanc-resize.jpg"
+              src="./images/hotel-tout-bleu-et-blanc.jpg"
               
             >
             <div class="hebergementFavoriteWrapcontentContent">
@@ -284,27 +290,27 @@
     <section class="activity" id="activity">
       <h2 class="activitytitre">Activités à Marseille</h2>
       <div class="activityCard activityCard1">
-         <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/vieux-port.jpg" class="activityCardImg"> 
+         <img src="./images/vieux-port.jpg" class="activityCardImg"> 
         <h3 class="activityCardtitre">Vieux Port</h3>
       </div>
       <div class="activityCard activityCard2">
-        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/fort-de-pomègues-resize.jpg"  class="activityCardImg">
+        <img src="./images/fort-de-pomègues.jpg"  class="activityCardImg">
         <h3 class="activityCardtitre">Fort de Pomègues</h3>
       </div>
       <div class="activityCard activityCard3">
-        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-national-des-calanques.jpg"  class="activityCardImg">
+        <img src="./images/parc-national-des-calanques.jpg"  class="activityCardImg">
         <h3 class="activityCardtitre">Parc National des Calanques</h3>
       </div>
       <div class="activityCard activityCard4">
-        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/notre-dame-de-la-garde.jpg"  class="activityCardImg">
+        <img src="./images/notre-dame-de-la-garde.jpg"  class="activityCardImg">
         <h3 class="activityCardtitre">Notre Dame de la Garde</h3>
       </div>
       <div class="activityCard activityCard5">
-        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/île-du-frioul.jpg"  class="activityCardImg">
+        <img src="./images/île-du-frioul.jpg"  class="activityCardImg">
         <h3 class="activityCardtitre">Île du Frioul</h3>
       </div>
       <div class="activityCard activityCard6">
-        <img src="C:/Users/sebo2/OneDrive/Documents/Openclassrooms Project/Project2/Openclassrooms-project/Projet2-Reservia/images/activites/4_small/parc-longchamp.jpg"class="activityCardImg">
+        <img src="./images/parc-longchamp.jpg"class="activityCardImg">
         <h3 class="activityCardtitre">Parc Longchamp</h3>
       </div>
     </section>
